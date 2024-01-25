@@ -54,6 +54,22 @@ section{
   padding: 2rem;
 }
 
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background-color: var(--light-bg);
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1.8rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
+
 .header{
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -97,7 +113,7 @@ section{
 .home .row{
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   gap: 1.5rem;
 }
 
@@ -118,6 +134,7 @@ width: 100%;
   margin-bottom: 1rem;
   font-size: 10rem;
   color: var(--white);
+  line-height: 1;
 }
 
 .home .row .content h3 span{
@@ -140,6 +157,10 @@ width: 100%;
 
   html{
     font-size: 55%;
+  }
+
+  .home .row .content h3{
+    font-size: 8rem;
   }
 
 }
@@ -170,6 +191,10 @@ width: 100%;
   .header .flex .navbar a{
     display: block;
     margin: 2rem;
+  }
+
+  .home .row .content h3{
+    font-size: 6rem;
   }
 
 }

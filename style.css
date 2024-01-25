@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 
 :root{
-  --green: #00E77F;
+  --yellow: #d6c31d;
   --white: #fff;
   --light-white: #aaa;
   --black: #3d3d3d;
@@ -40,7 +40,7 @@ html{
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: var(--green);
+  background-color: var(--yellow);
   border-radius: 5rem;
 }
 
@@ -96,7 +96,7 @@ section{
 }
 
 .header .flex .navbar a:hover{
-  color: var(--green);
+  color: var(--yellow);
 }
 
 #menu-btn{
@@ -138,10 +138,75 @@ width: 100%;
 }
 
 .home .row .content h3 span{
-  color: var(--green);
+  color: var(--yellow);
 }
 
 
+.count .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+
+.count .box-container .box{
+  background-color: var(--light-bg);
+  border-radius: .5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.count .box-container .box i{
+  font-size: 5rem;
+  color: var(--yellow);
+}
+
+.count .box-container .box .content h3{
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: .5rem;
+}
+
+.count .box-container .box .content p{
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about .row .image{
+  flex:1 1 40rem;
+}
+
+.about .row .image img{
+  width: 100%;
+}
+
+.about .row .content{
+  text-align: center;
+  flex:1 1 40rem;
+}
+
+.about .row .content h3{
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.about .row .content p{
+  padding:1rem 0;
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-white);
+}
 
 
 
@@ -203,6 +268,10 @@ width: 100%;
 
   html{
     font-size: 50%;
+  }
+
+  .home .row .content h3{
+    font-size: 5rem;
   }
 
 }
